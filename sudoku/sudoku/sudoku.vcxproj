@@ -18,6 +18,18 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="choose.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="maker.cpp" />
+    <ClCompile Include="solver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="choose.h" />
+    <ClInclude Include="maker.h" />
+    <ClInclude Include="solver.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{38E95053-FD51-4323-B788-7AB61165AECA}</ProjectGuid>
@@ -138,14 +150,6 @@
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="product.h" />
-    <ClInclude Include="stdafx.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="product.cpp" />
-    <ClCompile Include="sudoku.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
