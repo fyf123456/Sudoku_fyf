@@ -8,7 +8,7 @@ static int index = 0;
 void FianlMaker::make(int n) {
 	num = n;
 	count = 0;
-	int a[9] = { 1,2,3,4,5,6,7,8,9 };
+	int a[9] = { 9,1,2,3,4,5,6,7,8 };
 	while (1) {
 		table[0][4] = table[1][1] = table[2][7] = table[3][3] = table[4][0] = table[5][6] = table[6][5] = table[7][2] = table[8][8] = a[0];
 		table[0][5] = table[1][2] = table[2][8] = table[3][4] = table[4][1] = table[5][7] = table[6][3] = table[7][0] = table[8][6] = a[1];
@@ -18,7 +18,7 @@ void FianlMaker::make(int n) {
 		table[0][6] = table[1][3] = table[2][0] = table[3][8] = table[4][5] = table[5][2] = table[6][7] = table[7][4] = table[8][1] = a[5];
 		table[0][1] = table[1][7] = table[2][4] = table[3][0] = table[4][6] = table[5][3] = table[6][2] = table[7][8] = table[8][5] = a[6];
 		table[0][2] = table[1][8] = table[2][5] = table[3][1] = table[4][7] = table[5][4] = table[6][0] = table[7][6] = table[8][3] = a[7];
-		table[0][0] = table[1][6] = table[2][3] = table[3][2] = table[4][8] = table[5][5] = table[6][1] = table[7][7] = table[8][4] = 9;
+		table[0][0] = table[1][6] = table[2][3] = table[3][2] = table[4][8] = table[5][5] = table[6][1] = table[7][7] = table[8][4] = a[8];//第一个数字为（8+8）%9+1=8
 		memcpy(temp, table, sizeof(table));
 		for (int c1 = 0; c1 < 2; c1++)
 			for (int c2 = 0; c2 < 6; c2++)
