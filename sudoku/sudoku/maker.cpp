@@ -1,5 +1,4 @@
 #include "stdafx.h"
-#include "maker.h"
 
 
 static char str[163000001];	
@@ -22,7 +21,7 @@ void FianlMaker::make(int n) {
 		memcpy(temp, table, sizeof(table));
 		for (int c1 = 0; c1 < 2; c1++)
 			for (int c2 = 0; c2 < 6; c2++)
-				for (int c3 = 0; c3 < 6; c3++)
+				for (int c3 = 0; c3 < 6; c3++) 
 					for (int r1 = 0; r1 < 2; r1++)
 						for (int r2 = 0; r2 < 6; r2++)
 							for (int r3 = 0; r3 < 6; r3++) {

@@ -1,5 +1,6 @@
 #include "stdafx.h"
 
+
 int Left[num], Right[num], Up[num], Down[num];	// 每个元素的4个方向分量（相当于链表中的箭头）
 int Col[num];		// 记录每个元素的列标元素
 int Row[num];		// 记录每个元素所在的01矩阵行数

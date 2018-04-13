@@ -2,13 +2,11 @@
 
 #include "stdafx.h"
 
-using namespace std;
+
 
 class FianlMaker {
 public:
 	void make(int n);
-
-private:
 	int num, count;
 	int table[9][9];
 	int temp[9][9];
